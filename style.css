@@ -1,8 +1,27 @@
 *{
-    color: rgb(7, 1, 1);
-    background: rgb(7, 200, 243);
+    color: black;
+    margin: 0;
+    padding: 0;
+    /* background: #c841a0; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+body::before{
+    content: "";
+    background-image: url("bg3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    height: 100vh;
+}
+body{
+    /* background-image: url("bg2.jpg") ; */
+}
+
+
 
 #cityInput, #cityName, #inputContainer,button{
     margin: 3px;
@@ -10,6 +29,28 @@ padding:5px;
 text-align:center;
 font-size:20px;
 font-weight:bold;
+color: black;
+}
+#inputContainer{
+    border: none;
+}
+button{
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    margin-top: 20px;
+    padding: 10px;
+}
+button:hover{
+    color: black;
+    background-color: white;
+    transition: 0.8s;
+}
+#cityInput{
+    background-color: rgb(216, 207, 207);
+    border: 2px solid white;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 10px;
 }
 
 #weatherContainer{
@@ -20,8 +61,9 @@ font-weight:bold;
     transform: translate(-50%, -50%);
     height: 300px;
     width: 1300px;
-    border: 5px solid rgba(97, 95, 95, 0.829);    
+    border: 5px solid rgb(0, 0, 0);    
     border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(4, 0, 0);
 }
 
 #iconsContainer{
@@ -32,8 +74,9 @@ font-weight:bold;
     transform: translate(-50%, -50%);
     height: 240px;
     width: 1200px;    
-    border: 5px solid rgb(31, 82, 82);    
+    border: 5px solid rgb(0, 0, 0);    
     border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
 }
 
 .icons{
@@ -42,8 +85,9 @@ font-weight:bold;
     height: 200px;
     width: 190px;
     margin: 20px;
-    border: 5px solid rgb(48, 47, 47);
+    border: 5px solid rgb(0, 0, 0);
     border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
 }
 
 .image{
